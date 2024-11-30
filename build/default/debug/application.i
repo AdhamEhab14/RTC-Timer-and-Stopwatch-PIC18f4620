@@ -5204,8 +5204,6 @@ void set_alarm(void){
                 keypad_value = '\0';
             }
         hours_display();
-        hours_display();
-        hours_display();
 
             while(1){
 
@@ -5222,8 +5220,6 @@ void set_alarm(void){
                 keypad_value = '\0';
             }
         minutes_display();
-        minutes_display();
-        minutes_display();
 
             while(1){
 
@@ -5239,8 +5235,6 @@ void set_alarm(void){
                 }
                 keypad_value = '\0';
             }
-        seconds_display();
-        seconds_display();
         seconds_display();
         alarm_hours = (hours_input[0] - 48) * 10 + (hours_input[1] - 48);
         alarm_minutes = (minutes_input[0] - 48) * 10 + (minutes_input[1] - 48);

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/debug\Stop_Watch.debug.hex">
+  <executable name="dist/default/debug\RTC_TIMER_STOPWATCH.debug.hex">
     <memory name="program">
       <units>bytes</units>
       <length>65536</length>
-      <used>8831</used>
-      <free>56705</free>
+      <used>8807</used>
+      <free>56729</free>
     </memory>
     <memory name="data">
       <units>bytes</units>

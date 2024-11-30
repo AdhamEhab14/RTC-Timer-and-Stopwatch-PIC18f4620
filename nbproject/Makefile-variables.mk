@@ -6,5 +6,5 @@
 CND_BASEDIR=`pwd`
 # default configuration
 CND_ARTIFACT_DIR_default=dist/default/production
-CND_ARTIFACT_NAME_default=Stop_Watch.production.hex
-CND_ARTIFACT_PATH_default=dist/default/production/Stop_Watch.production.hex
+CND_ARTIFACT_NAME_default=RTC_TIMER_STOPWATCH.production.hex
+CND_ARTIFACT_PATH_default=dist/default/production/RTC_TIMER_STOPWATCH.production.hex

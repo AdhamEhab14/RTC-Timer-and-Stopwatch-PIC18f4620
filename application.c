@@ -7,7 +7,7 @@
 
 #include "application.h"
 
-
+/* this is a modification */
 
 volatile uint8 seconds, minutes, hours;
 volatile uint8 paused_hours, paused_minutes, paused_seconds;

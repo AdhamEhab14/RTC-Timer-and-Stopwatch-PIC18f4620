@@ -886,640 +886,622 @@ Version 4.0 HI-TECH Software Intermediate Code
 "120
 [; ;application.c: 120:         hours_display();
 [e ( _hours_display ..  ]
-"121
-[; ;application.c: 121:         hours_display();
-[e ( _hours_display ..  ]
 "122
-[; ;application.c: 122:         hours_display();
-[e ( _hours_display ..  ]
-"124
-[; ;application.c: 124:             while(1){
+[; ;application.c: 122:             while(1){
 [e :U 307 ]
 {
-"126
-[; ;application.c: 126:                 do{
+"124
+[; ;application.c: 124:                 do{
 [e :U 311 ]
 {
-"127
-[; ;application.c: 127:                     retVal = keypad_get_value(&keypad, &keypad_value);
+"125
+[; ;application.c: 125:                     retVal = keypad_get_value(&keypad, &keypad_value);
 [e = _retVal ( _keypad_get_value (2 , -> &U _keypad `*CS277 -> &U _keypad_value `*uc ]
-"128
-[; ;application.c: 128:                 }while(keypad_value == '\0');
+"126
+[; ;application.c: 126:                 }while(keypad_value == '\0');
 }
 [e $ == -> _keypad_value `ui -> 0 `ui 311  ]
 [e :U 310 ]
-"129
-[; ;application.c: 129:                 minutes_input[counter2] = keypad_value;
+"127
+[; ;application.c: 127:                 minutes_input[counter2] = keypad_value;
 [e = *U + &U _minutes_input * -> _counter2 `ux -> -> # *U &U _minutes_input `ui `ux _keypad_value ]
-"130
-[; ;application.c: 130:                 counter2++;
+"128
+[; ;application.c: 128:                 counter2++;
 [e ++ _counter2 -> -> 1 `i `uc ]
-"132
-[; ;application.c: 132:                 if(counter2 == 2){
+"130
+[; ;application.c: 130:                 if(counter2 == 2){
 [e $ ! == -> _counter2 `i -> 2 `i 312  ]
 {
-"133
-[; ;application.c: 133:                     keypad_value = '\0';
+"131
+[; ;application.c: 131:                     keypad_value = '\0';
 [e = _keypad_value -> -> 0 `ui `uc ]
-"134
-[; ;application.c: 134:                     break;
+"132
+[; ;application.c: 132:                     break;
 [e $U 308  ]
-"135
-[; ;application.c: 135:                 }
+"133
+[; ;application.c: 133:                 }
 }
 [e :U 312 ]
-"136
-[; ;application.c: 136:                 keypad_value = '\0';
+"134
+[; ;application.c: 134:                 keypad_value = '\0';
 [e = _keypad_value -> -> 0 `ui `uc ]
-"137
-[; ;application.c: 137:             }
+"135
+[; ;application.c: 135:             }
 }
 [e :U 306 ]
 [e $U 307  ]
 [e :U 308 ]
+"136
+[; ;application.c: 136:         minutes_display();
+[e ( _minutes_display ..  ]
 "138
-[; ;application.c: 138:         minutes_display();
-[e ( _minutes_display ..  ]
-"139
-[; ;application.c: 139:         minutes_display();
-[e ( _minutes_display ..  ]
-"140
-[; ;application.c: 140:         minutes_display();
-[e ( _minutes_display ..  ]
-"142
-[; ;application.c: 142:             while(1){
+[; ;application.c: 138:             while(1){
 [e :U 314 ]
 {
-"144
-[; ;application.c: 144:                 do{
+"140
+[; ;application.c: 140:                 do{
 [e :U 318 ]
 {
-"145
-[; ;application.c: 145:                     retVal = keypad_get_value(&keypad, &keypad_value);
+"141
+[; ;application.c: 141:                     retVal = keypad_get_value(&keypad, &keypad_value);
 [e = _retVal ( _keypad_get_value (2 , -> &U _keypad `*CS277 -> &U _keypad_value `*uc ]
-"146
-[; ;application.c: 146:                 }while(keypad_value == '\0');
+"142
+[; ;application.c: 142:                 }while(keypad_value == '\0');
 }
 [e $ == -> _keypad_value `ui -> 0 `ui 318  ]
 [e :U 317 ]
-"147
-[; ;application.c: 147:                 seconds_input[counter3] = keypad_value;
+"143
+[; ;application.c: 143:                 seconds_input[counter3] = keypad_value;
 [e = *U + &U _seconds_input * -> _counter3 `ux -> -> # *U &U _seconds_input `ui `ux _keypad_value ]
-"148
-[; ;application.c: 148:                 counter3++;
+"144
+[; ;application.c: 144:                 counter3++;
 [e ++ _counter3 -> -> 1 `i `uc ]
-"150
-[; ;application.c: 150:                 if(counter3 == 2){
+"146
+[; ;application.c: 146:                 if(counter3 == 2){
 [e $ ! == -> _counter3 `i -> 2 `i 319  ]
 {
-"151
-[; ;application.c: 151:                     keypad_value = '\0';
+"147
+[; ;application.c: 147:                     keypad_value = '\0';
 [e = _keypad_value -> -> 0 `ui `uc ]
-"152
-[; ;application.c: 152:                     break;
+"148
+[; ;application.c: 148:                     break;
 [e $U 315  ]
-"153
-[; ;application.c: 153:                 }
+"149
+[; ;application.c: 149:                 }
 }
 [e :U 319 ]
-"154
-[; ;application.c: 154:                 keypad_value = '\0';
+"150
+[; ;application.c: 150:                 keypad_value = '\0';
 [e = _keypad_value -> -> 0 `ui `uc ]
-"155
-[; ;application.c: 155:             }
+"151
+[; ;application.c: 151:             }
 }
 [e :U 313 ]
 [e $U 314  ]
 [e :U 315 ]
-"156
-[; ;application.c: 156:         seconds_display();
+"152
+[; ;application.c: 152:         seconds_display();
 [e ( _seconds_display ..  ]
-"157
-[; ;application.c: 157:         seconds_display();
-[e ( _seconds_display ..  ]
-"158
-[; ;application.c: 158:         seconds_display();
-[e ( _seconds_display ..  ]
-"159
-[; ;application.c: 159:         alarm_hours = (hours_input[0] - 48) * 10 + (hours_input[1] - 48);
+"153
+[; ;application.c: 153:         alarm_hours = (hours_input[0] - 48) * 10 + (hours_input[1] - 48);
 [e = _alarm_hours -> + * - -> *U + &U _hours_input * -> -> -> 0 `i `ui `ux -> -> # *U &U _hours_input `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _hours_input * -> -> -> 1 `i `ui `ux -> -> # *U &U _hours_input `ui `ux `i -> 48 `i `uc ]
-"160
-[; ;application.c: 160:         alarm_minutes = (minutes_input[0] - 48) * 10 + (minutes_input[1] - 48);
+"154
+[; ;application.c: 154:         alarm_minutes = (minutes_input[0] - 48) * 10 + (minutes_input[1] - 48);
 [e = _alarm_minutes -> + * - -> *U + &U _minutes_input * -> -> -> 0 `i `ui `ux -> -> # *U &U _minutes_input `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _minutes_input * -> -> -> 1 `i `ui `ux -> -> # *U &U _minutes_input `ui `ux `i -> 48 `i `uc ]
-"161
-[; ;application.c: 161:         alarm_seconds = (seconds_input[0] - 48) * 10 + (seconds_input[1] - 48);
+"155
+[; ;application.c: 155:         alarm_seconds = (seconds_input[0] - 48) * 10 + (seconds_input[1] - 48);
 [e = _alarm_seconds -> + * - -> *U + &U _seconds_input * -> -> -> 0 `i `ui `ux -> -> # *U &U _seconds_input `ui `ux `i -> 48 `i -> 10 `i - -> *U + &U _seconds_input * -> -> -> 1 `i `ui `ux -> -> # *U &U _seconds_input `ui `ux `i -> 48 `i `uc ]
-"162
-[; ;application.c: 162:         mode_status = 4;
+"156
+[; ;application.c: 156:         mode_status = 4;
 [e = _mode_status -> -> 4 `i `uc ]
-"163
-[; ;application.c: 163: }
+"157
+[; ;application.c: 157: }
 [e :UE 298 ]
 }
-"166
-[; ;application.c: 166: void TIMER0_IneterruptHandler(void){
+"160
+[; ;application.c: 160: void TIMER0_IneterruptHandler(void){
 [v _TIMER0_IneterruptHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _TIMER0_IneterruptHandler ]
 [f ]
-"167
-[; ;application.c: 167:     if(1 == mode_status){
+"161
+[; ;application.c: 161:     if(1 == mode_status){
 [e $ ! == -> 1 `i -> _mode_status `i 321  ]
 {
-"168
-[; ;application.c: 168:         seconds++;
+"162
+[; ;application.c: 162:         seconds++;
 [e ++ _seconds -> -> 1 `i `Vuc ]
-"169
-[; ;application.c: 169:         if(60 == seconds){
+"163
+[; ;application.c: 163:         if(60 == seconds){
 [e $ ! == -> 60 `i -> _seconds `i 322  ]
 {
-"170
-[; ;application.c: 170:             seconds = 0;
+"164
+[; ;application.c: 164:             seconds = 0;
 [e = _seconds -> -> 0 `i `uc ]
-"171
-[; ;application.c: 171:             minutes++;
+"165
+[; ;application.c: 165:             minutes++;
 [e ++ _minutes -> -> 1 `i `Vuc ]
-"172
-[; ;application.c: 172:         }
+"166
+[; ;application.c: 166:         }
 }
 [e :U 322 ]
-"173
-[; ;application.c: 173:         if(60 == minutes){
+"167
+[; ;application.c: 167:         if(60 == minutes){
 [e $ ! == -> 60 `i -> _minutes `i 323  ]
 {
-"174
-[; ;application.c: 174:             minutes = 0;
+"168
+[; ;application.c: 168:             minutes = 0;
 [e = _minutes -> -> 0 `i `uc ]
-"175
-[; ;application.c: 175:             hours++;
+"169
+[; ;application.c: 169:             hours++;
 [e ++ _hours -> -> 1 `i `Vuc ]
-"176
-[; ;application.c: 176:         }
+"170
+[; ;application.c: 170:         }
 }
 [e :U 323 ]
-"177
-[; ;application.c: 177:         if(99 == hours){
+"171
+[; ;application.c: 171:         if(99 == hours){
 [e $ ! == -> 99 `i -> _hours `i 324  ]
 {
-"178
-[; ;application.c: 178:             hours = 0;
+"172
+[; ;application.c: 172:             hours = 0;
 [e = _hours -> -> 0 `i `uc ]
-"179
-[; ;application.c: 179:         }
+"173
+[; ;application.c: 173:         }
 }
 [e :U 324 ]
-"180
-[; ;application.c: 180:     }
+"174
+[; ;application.c: 174:     }
 }
 [e $U 325  ]
-"181
-[; ;application.c: 181:     else if(4 == mode_status){
+"175
+[; ;application.c: 175:     else if(4 == mode_status){
 [e :U 321 ]
 [e $ ! == -> 4 `i -> _mode_status `i 326  ]
 {
-"182
-[; ;application.c: 182:             if(0 == alarm_seconds){
+"176
+[; ;application.c: 176:             if(0 == alarm_seconds){
 [e $ ! == -> 0 `i -> _alarm_seconds `i 327  ]
 {
-"183
-[; ;application.c: 183:                 if(0 == alarm_minutes){
+"177
+[; ;application.c: 177:                 if(0 == alarm_minutes){
 [e $ ! == -> 0 `i -> _alarm_minutes `i 328  ]
 {
-"184
-[; ;application.c: 184:                     if(0 == alarm_hours){
+"178
+[; ;application.c: 178:                     if(0 == alarm_hours){
 [e $ ! == -> 0 `i -> _alarm_hours `i 329  ]
 {
-"185
-[; ;application.c: 185:                         gpio_pin_toggle_logic(&buzzer);
+"179
+[; ;application.c: 179:                         gpio_pin_toggle_logic(&buzzer);
 [e ( _gpio_pin_toggle_logic (1 -> &U _buzzer `*CS273 ]
-"186
-[; ;application.c: 186:                         led_toggle(&buzzer_led);
+"180
+[; ;application.c: 180:                         led_toggle(&buzzer_led);
 [e ( _led_toggle (1 -> &U _buzzer_led `*CS274 ]
-"187
-[; ;application.c: 187:                     }
+"181
+[; ;application.c: 181:                     }
 }
 [e $U 330  ]
-"188
-[; ;application.c: 188:                     else if(0 != alarm_hours){
+"182
+[; ;application.c: 182:                     else if(0 != alarm_hours){
 [e :U 329 ]
 [e $ ! != -> 0 `i -> _alarm_hours `i 331  ]
 {
-"189
-[; ;application.c: 189:                         alarm_hours--;
+"183
+[; ;application.c: 183:                         alarm_hours--;
 [e -- _alarm_hours -> -> 1 `i `Vuc ]
-"190
-[; ;application.c: 190:                         alarm_minutes = 60;
+"184
+[; ;application.c: 184:                         alarm_minutes = 60;
 [e = _alarm_minutes -> -> 60 `i `uc ]
-"191
-[; ;application.c: 191:                     }
+"185
+[; ;application.c: 185:                     }
 }
 [e :U 331 ]
 [e :U 330 ]
-"192
-[; ;application.c: 192:                 }
+"186
+[; ;application.c: 186:                 }
 }
 [e $U 332  ]
-"193
-[; ;application.c: 193:                 else if(0 != alarm_minutes){
+"187
+[; ;application.c: 187:                 else if(0 != alarm_minutes){
 [e :U 328 ]
 [e $ ! != -> 0 `i -> _alarm_minutes `i 333  ]
 {
-"194
-[; ;application.c: 194:                     alarm_minutes--;
+"188
+[; ;application.c: 188:                     alarm_minutes--;
 [e -- _alarm_minutes -> -> 1 `i `Vuc ]
-"195
-[; ;application.c: 195:                     alarm_seconds = 59;
+"189
+[; ;application.c: 189:                     alarm_seconds = 59;
 [e = _alarm_seconds -> -> 59 `i `uc ]
-"196
-[; ;application.c: 196:                 }
+"190
+[; ;application.c: 190:                 }
 }
 [e :U 333 ]
 [e :U 332 ]
-"197
-[; ;application.c: 197:             }
+"191
+[; ;application.c: 191:             }
 }
 [e $U 334  ]
-"198
-[; ;application.c: 198:             else if(0 != alarm_seconds){
+"192
+[; ;application.c: 192:             else if(0 != alarm_seconds){
 [e :U 327 ]
 [e $ ! != -> 0 `i -> _alarm_seconds `i 335  ]
 {
-"199
-[; ;application.c: 199:                 alarm_seconds--;
+"193
+[; ;application.c: 193:                 alarm_seconds--;
 [e -- _alarm_seconds -> -> 1 `i `Vuc ]
-"200
-[; ;application.c: 200:             }
+"194
+[; ;application.c: 194:             }
 }
 [e :U 335 ]
 [e :U 334 ]
-"201
-[; ;application.c: 201:     }
+"195
+[; ;application.c: 195:     }
 }
 [e $U 336  ]
-"202
-[; ;application.c: 202:     else if(2 == mode_status){
+"196
+[; ;application.c: 196:     else if(2 == mode_status){
 [e :U 326 ]
 [e $ ! == -> 2 `i -> _mode_status `i 337  ]
 {
-"203
-[; ;application.c: 203:         clock_seconds++;
+"197
+[; ;application.c: 197:         clock_seconds++;
 [e ++ _clock_seconds -> -> 1 `i `Vuc ]
-"204
-[; ;application.c: 204:         if(60 == clock_seconds){
+"198
+[; ;application.c: 198:         if(60 == clock_seconds){
 [e $ ! == -> 60 `i -> _clock_seconds `i 338  ]
 {
-"205
-[; ;application.c: 205:             clock_seconds = 0;
+"199
+[; ;application.c: 199:             clock_seconds = 0;
 [e = _clock_seconds -> -> 0 `i `uc ]
-"206
-[; ;application.c: 206:             clock_minutes++;
+"200
+[; ;application.c: 200:             clock_minutes++;
 [e ++ _clock_minutes -> -> 1 `i `Vuc ]
-"207
-[; ;application.c: 207:         }
+"201
+[; ;application.c: 201:         }
 }
 [e :U 338 ]
-"208
-[; ;application.c: 208:         if(60 == clock_minutes){
+"202
+[; ;application.c: 202:         if(60 == clock_minutes){
 [e $ ! == -> 60 `i -> _clock_minutes `i 339  ]
 {
-"209
-[; ;application.c: 209:             clock_minutes = 0;
+"203
+[; ;application.c: 203:             clock_minutes = 0;
 [e = _clock_minutes -> -> 0 `i `uc ]
-"210
-[; ;application.c: 210:             clock_hours++;
+"204
+[; ;application.c: 204:             clock_hours++;
 [e ++ _clock_hours -> -> 1 `i `Vuc ]
-"211
-[; ;application.c: 211:         }
+"205
+[; ;application.c: 205:         }
 }
 [e :U 339 ]
-"212
-[; ;application.c: 212:         if(24 == clock_hours){
+"206
+[; ;application.c: 206:         if(24 == clock_hours){
 [e $ ! == -> 24 `i -> _clock_hours `i 340  ]
 {
-"213
-[; ;application.c: 213:             clock_hours = 0;
+"207
+[; ;application.c: 207:             clock_hours = 0;
 [e = _clock_hours -> -> 0 `i `uc ]
-"214
-[; ;application.c: 214:         }
+"208
+[; ;application.c: 208:         }
 }
 [e :U 340 ]
-"215
-[; ;application.c: 215:     }
+"209
+[; ;application.c: 209:     }
 }
 [e :U 337 ]
 [e :U 336 ]
 [e :U 325 ]
-"216
-[; ;application.c: 216: }
+"210
+[; ;application.c: 210: }
 [e :UE 320 ]
 }
-"218
-[; ;application.c: 218: void INT0_ResetIneterruptHandler(void){
+"212
+[; ;application.c: 212: void INT0_ResetIneterruptHandler(void){
 [v _INT0_ResetIneterruptHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _INT0_ResetIneterruptHandler ]
 [f ]
-"219
-[; ;application.c: 219:     hours = 0;
+"213
+[; ;application.c: 213:     hours = 0;
 [e = _hours -> -> 0 `i `uc ]
-"220
-[; ;application.c: 220:     minutes = 0;
+"214
+[; ;application.c: 214:     minutes = 0;
 [e = _minutes -> -> 0 `i `uc ]
-"221
-[; ;application.c: 221:     seconds = 0;
+"215
+[; ;application.c: 215:     seconds = 0;
 [e = _seconds -> -> 0 `i `uc ]
-"222
-[; ;application.c: 222: }
+"216
+[; ;application.c: 216: }
 [e :UE 341 ]
 }
-"224
-[; ;application.c: 224: void RB0_PauseIneterruptHandler(void){
+"218
+[; ;application.c: 218: void RB0_PauseIneterruptHandler(void){
 [v _RB0_PauseIneterruptHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _RB0_PauseIneterruptHandler ]
 [f ]
-"225
-[; ;application.c: 225:     Std_ReturnType retVal = (Std_ReturnType)0x00;
+"219
+[; ;application.c: 219:     Std_ReturnType retVal = (Std_ReturnType)0x00;
 [v _retVal `uc ~T0 @X0 1 a ]
 [e = _retVal -> -> 0 `i `uc ]
-"226
-[; ;application.c: 226:     if(1 == resume_flag){
+"220
+[; ;application.c: 220:     if(1 == resume_flag){
 [e $ ! == -> 1 `i -> _resume_flag `i 343  ]
 {
-"227
-[; ;application.c: 227:         resume_flag = 0;
+"221
+[; ;application.c: 221:         resume_flag = 0;
 [e = _resume_flag -> -> 0 `i `uc ]
-"228
-[; ;application.c: 228:         retVal = Data_EEPROM_Write_Byte(0x00 , hours);
+"222
+[; ;application.c: 222:         retVal = Data_EEPROM_Write_Byte(0x00 , hours);
 [e = _retVal ( _Data_EEPROM_Write_Byte (2 , -> -> 0 `i `us _hours ]
-"229
-[; ;application.c: 229:         retVal = Data_EEPROM_Write_Byte(0x01 , minutes);
+"223
+[; ;application.c: 223:         retVal = Data_EEPROM_Write_Byte(0x01 , minutes);
 [e = _retVal ( _Data_EEPROM_Write_Byte (2 , -> -> 1 `i `us _minutes ]
-"230
-[; ;application.c: 230:         retVal = Data_EEPROM_Write_Byte(0x02 , seconds);
+"224
+[; ;application.c: 224:         retVal = Data_EEPROM_Write_Byte(0x02 , seconds);
 [e = _retVal ( _Data_EEPROM_Write_Byte (2 , -> -> 2 `i `us _seconds ]
-"231
-[; ;application.c: 231:         retVal = Data_EEPROM_Read_Byte(0x00 ,&paused_hours);
+"225
+[; ;application.c: 225:         retVal = Data_EEPROM_Read_Byte(0x00 ,&paused_hours);
 [e = _retVal ( _Data_EEPROM_Read_Byte (2 , -> -> 0 `i `us -> &U _paused_hours `*uc ]
-"232
-[; ;application.c: 232:         retVal = Data_EEPROM_Read_Byte(0x01 ,&paused_minutes);
+"226
+[; ;application.c: 226:         retVal = Data_EEPROM_Read_Byte(0x01 ,&paused_minutes);
 [e = _retVal ( _Data_EEPROM_Read_Byte (2 , -> -> 1 `i `us -> &U _paused_minutes `*uc ]
-"233
-[; ;application.c: 233:         retVal = Data_EEPROM_Read_Byte(0x02 ,&paused_seconds);
+"227
+[; ;application.c: 227:         retVal = Data_EEPROM_Read_Byte(0x02 ,&paused_seconds);
 [e = _retVal ( _Data_EEPROM_Read_Byte (2 , -> -> 2 `i `us -> &U _paused_seconds `*uc ]
-"234
-[; ;application.c: 234:         pause_flag = 1;
+"228
+[; ;application.c: 228:         pause_flag = 1;
 [e = _pause_flag -> -> 1 `i `uc ]
-"235
-[; ;application.c: 235:     }
+"229
+[; ;application.c: 229:     }
 }
 [e $U 344  ]
-"236
-[; ;application.c: 236:     else if(1 == pause_flag){
+"230
+[; ;application.c: 230:     else if(1 == pause_flag){
 [e :U 343 ]
 [e $ ! == -> 1 `i -> _pause_flag `i 345  ]
 {
-"237
-[; ;application.c: 237:         pause_flag = 0;
+"231
+[; ;application.c: 231:         pause_flag = 0;
 [e = _pause_flag -> -> 0 `i `uc ]
-"238
-[; ;application.c: 238:         resume_flag = 1;
+"232
+[; ;application.c: 232:         resume_flag = 1;
 [e = _resume_flag -> -> 1 `i `uc ]
-"239
-[; ;application.c: 239:         retVal = Data_EEPROM_Read_Byte(0x00 ,&hours);
+"233
+[; ;application.c: 233:         retVal = Data_EEPROM_Read_Byte(0x00 ,&hours);
 [e = _retVal ( _Data_EEPROM_Read_Byte (2 , -> -> 0 `i `us -> &U _hours `*uc ]
-"240
-[; ;application.c: 240:         retVal = Data_EEPROM_Read_Byte(0x01 ,&minutes);
+"234
+[; ;application.c: 234:         retVal = Data_EEPROM_Read_Byte(0x01 ,&minutes);
 [e = _retVal ( _Data_EEPROM_Read_Byte (2 , -> -> 1 `i `us -> &U _minutes `*uc ]
-"241
-[; ;application.c: 241:         retVal = Data_EEPROM_Read_Byte(0x02 ,&seconds);
+"235
+[; ;application.c: 235:         retVal = Data_EEPROM_Read_Byte(0x02 ,&seconds);
 [e = _retVal ( _Data_EEPROM_Read_Byte (2 , -> -> 2 `i `us -> &U _seconds `*uc ]
-"242
-[; ;application.c: 242:     }
+"236
+[; ;application.c: 236:     }
 }
 [e :U 345 ]
 [e :U 344 ]
-"243
-[; ;application.c: 243: }
+"237
+[; ;application.c: 237: }
 [e :UE 342 ]
 }
-"245
-[; ;application.c: 245: void INT1_CountUpIneterruptHandler(void){
+"239
+[; ;application.c: 239: void INT1_CountUpIneterruptHandler(void){
 [v _INT1_CountUpIneterruptHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _INT1_CountUpIneterruptHandler ]
 [f ]
-"246
-[; ;application.c: 246:     Std_ReturnType retVal = (Std_ReturnType)0x00;
+"240
+[; ;application.c: 240:     Std_ReturnType retVal = (Std_ReturnType)0x00;
 [v _retVal `uc ~T0 @X0 1 a ]
 [e = _retVal -> -> 0 `i `uc ]
-"247
-[; ;application.c: 247:     mode_status = 1;
+"241
+[; ;application.c: 241:     mode_status = 1;
 [e = _mode_status -> -> 1 `i `uc ]
-"248
-[; ;application.c: 248:     retVal = led_turn_on(&stopwatch_led);
+"242
+[; ;application.c: 242:     retVal = led_turn_on(&stopwatch_led);
 [e = _retVal ( _led_turn_on (1 -> &U _stopwatch_led `*CS274 ]
-"249
-[; ;application.c: 249:     retVal = led_turn_off(&timer_led);
+"243
+[; ;application.c: 243:     retVal = led_turn_off(&timer_led);
 [e = _retVal ( _led_turn_off (1 -> &U _timer_led `*CS274 ]
-"250
-[; ;application.c: 250:     retVal = led_turn_off(&clock_led);
+"244
+[; ;application.c: 244:     retVal = led_turn_off(&clock_led);
 [e = _retVal ( _led_turn_off (1 -> &U _clock_led `*CS274 ]
-"251
-[; ;application.c: 251: }
+"245
+[; ;application.c: 245: }
 [e :UE 346 ]
 }
-"253
-[; ;application.c: 253: void INT2_CountDownIneterruptHandler(void){
+"247
+[; ;application.c: 247: void INT2_CountDownIneterruptHandler(void){
 [v _INT2_CountDownIneterruptHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _INT2_CountDownIneterruptHandler ]
 [f ]
-"254
-[; ;application.c: 254:     Std_ReturnType retVal = (Std_ReturnType)0x00;
+"248
+[; ;application.c: 248:     Std_ReturnType retVal = (Std_ReturnType)0x00;
 [v _retVal `uc ~T0 @X0 1 a ]
 [e = _retVal -> -> 0 `i `uc ]
-"255
-[; ;application.c: 255:     mode_status = 0;
+"249
+[; ;application.c: 249:     mode_status = 0;
 [e = _mode_status -> -> 0 `i `uc ]
-"256
-[; ;application.c: 256:     retVal = led_turn_on(&timer_led);
+"250
+[; ;application.c: 250:     retVal = led_turn_on(&timer_led);
 [e = _retVal ( _led_turn_on (1 -> &U _timer_led `*CS274 ]
-"257
-[; ;application.c: 257:     retVal = led_turn_off(&stopwatch_led);
+"251
+[; ;application.c: 251:     retVal = led_turn_off(&stopwatch_led);
 [e = _retVal ( _led_turn_off (1 -> &U _stopwatch_led `*CS274 ]
-"258
-[; ;application.c: 258:     retVal = led_turn_off(&clock_led);
+"252
+[; ;application.c: 252:     retVal = led_turn_off(&clock_led);
 [e = _retVal ( _led_turn_off (1 -> &U _clock_led `*CS274 ]
-"259
-[; ;application.c: 259: }
+"253
+[; ;application.c: 253: }
 [e :UE 347 ]
 }
-"262
-[; ;application.c: 262: void RB1_ClockIneterruptHandler(void){
+"256
+[; ;application.c: 256: void RB1_ClockIneterruptHandler(void){
 [v _RB1_ClockIneterruptHandler `(v ~T0 @X0 1 ef ]
 {
 [e :U _RB1_ClockIneterruptHandler ]
 [f ]
-"263
-[; ;application.c: 263:     Std_ReturnType retVal = (Std_ReturnType)0x00;
+"257
+[; ;application.c: 257:     Std_ReturnType retVal = (Std_ReturnType)0x00;
 [v _retVal `uc ~T0 @X0 1 a ]
 [e = _retVal -> -> 0 `i `uc ]
-"264
-[; ;application.c: 264:     mode_status = 2;
+"258
+[; ;application.c: 258:     mode_status = 2;
 [e = _mode_status -> -> 2 `i `uc ]
-"265
-[; ;application.c: 265:     retVal = led_turn_on(&clock_led);
+"259
+[; ;application.c: 259:     retVal = led_turn_on(&clock_led);
 [e = _retVal ( _led_turn_on (1 -> &U _clock_led `*CS274 ]
-"266
-[; ;application.c: 266:     retVal = led_turn_off(&timer_led);
+"260
+[; ;application.c: 260:     retVal = led_turn_off(&timer_led);
 [e = _retVal ( _led_turn_off (1 -> &U _timer_led `*CS274 ]
-"267
-[; ;application.c: 267:     retVal = led_turn_off(&stopwatch_led);
+"261
+[; ;application.c: 261:     retVal = led_turn_off(&stopwatch_led);
 [e = _retVal ( _led_turn_off (1 -> &U _stopwatch_led `*CS274 ]
-"268
-[; ;application.c: 268: }
+"262
+[; ;application.c: 262: }
 [e :UE 348 ]
 }
-"271
-[; ;application.c: 271: void hours_display(void){
+"265
+[; ;application.c: 265: void hours_display(void){
 [v _hours_display `(v ~T0 @X0 1 ef ]
 {
 [e :U _hours_display ]
 [f ]
-"272
-[; ;application.c: 272:     Std_ReturnType retVal = (Std_ReturnType)0x00;
+"266
+[; ;application.c: 266:     Std_ReturnType retVal = (Std_ReturnType)0x00;
 [v _retVal `uc ~T0 @X0 1 a ]
 [e = _retVal -> -> 0 `i `uc ]
-"273
-[; ;application.c: 273:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(hours_input[0] - 48)));
+"267
+[; ;application.c: 267:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(hours_input[0] - 48)));
 [e = _retVal ( _seven_segment_write_number (2 , -> &U _seven_segment `*CS276 -> - -> *U + &U _hours_input * -> -> -> 0 `i `ui `ux -> -> # *U &U _hours_input `ui `ux `i -> 48 `i `uc ]
-"274
-[; ;application.c: 274:     retVal = gpio_pin_write_logic(&seg_enable_1 , GPIO_HIGH);
+"268
+[; ;application.c: 268:     retVal = gpio_pin_write_logic(&seg_enable_1 , GPIO_HIGH);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_1 `*CS273 . `E2986 1 ]
-"275
-[; ;application.c: 275:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
+"269
+[; ;application.c: 269:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
-"276
-[; ;application.c: 276:     retVal = gpio_pin_write_logic(&seg_enable_1 , GPIO_LOW);
+"270
+[; ;application.c: 270:     retVal = gpio_pin_write_logic(&seg_enable_1 , GPIO_LOW);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_1 `*CS273 . `E2986 0 ]
-"277
-[; ;application.c: 277:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(hours_input[1] - 48)));
+"271
+[; ;application.c: 271:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(hours_input[1] - 48)));
 [e = _retVal ( _seven_segment_write_number (2 , -> &U _seven_segment `*CS276 -> - -> *U + &U _hours_input * -> -> -> 1 `i `ui `ux -> -> # *U &U _hours_input `ui `ux `i -> 48 `i `uc ]
-"278
-[; ;application.c: 278:     retVal = gpio_pin_write_logic(&seg_enable_2 , GPIO_HIGH);
+"272
+[; ;application.c: 272:     retVal = gpio_pin_write_logic(&seg_enable_2 , GPIO_HIGH);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_2 `*CS273 . `E2986 1 ]
-"279
-[; ;application.c: 279:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
+"273
+[; ;application.c: 273:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
-"280
-[; ;application.c: 280: }
+"274
+[; ;application.c: 274: }
 [e :UE 349 ]
 }
-"281
-[; ;application.c: 281: void minutes_display(void){
+"275
+[; ;application.c: 275: void minutes_display(void){
 [v _minutes_display `(v ~T0 @X0 1 ef ]
 {
 [e :U _minutes_display ]
 [f ]
-"282
-[; ;application.c: 282:     Std_ReturnType retVal = (Std_ReturnType)0x00;
+"276
+[; ;application.c: 276:     Std_ReturnType retVal = (Std_ReturnType)0x00;
 [v _retVal `uc ~T0 @X0 1 a ]
 [e = _retVal -> -> 0 `i `uc ]
-"283
-[; ;application.c: 283:     retVal = gpio_pin_write_logic(&seg_enable_2 , GPIO_LOW);
+"277
+[; ;application.c: 277:     retVal = gpio_pin_write_logic(&seg_enable_2 , GPIO_LOW);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_2 `*CS273 . `E2986 0 ]
-"284
-[; ;application.c: 284:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(minutes_input[0] - 48)));
+"278
+[; ;application.c: 278:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(minutes_input[0] - 48)));
 [e = _retVal ( _seven_segment_write_number (2 , -> &U _seven_segment `*CS276 -> - -> *U + &U _minutes_input * -> -> -> 0 `i `ui `ux -> -> # *U &U _minutes_input `ui `ux `i -> 48 `i `uc ]
-"285
-[; ;application.c: 285:     retVal = gpio_pin_write_logic(&seg_enable_3 , GPIO_HIGH);
+"279
+[; ;application.c: 279:     retVal = gpio_pin_write_logic(&seg_enable_3 , GPIO_HIGH);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_3 `*CS273 . `E2986 1 ]
-"286
-[; ;application.c: 286:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
+"280
+[; ;application.c: 280:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
-"287
-[; ;application.c: 287:     retVal = gpio_pin_write_logic(&seg_enable_3 , GPIO_LOW);
+"281
+[; ;application.c: 281:     retVal = gpio_pin_write_logic(&seg_enable_3 , GPIO_LOW);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_3 `*CS273 . `E2986 0 ]
-"288
-[; ;application.c: 288:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(minutes_input[1] - 48)));
+"282
+[; ;application.c: 282:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(minutes_input[1] - 48)));
 [e = _retVal ( _seven_segment_write_number (2 , -> &U _seven_segment `*CS276 -> - -> *U + &U _minutes_input * -> -> -> 1 `i `ui `ux -> -> # *U &U _minutes_input `ui `ux `i -> 48 `i `uc ]
-"289
-[; ;application.c: 289:     retVal = gpio_pin_write_logic(&seg_enable_4 , GPIO_HIGH);
+"283
+[; ;application.c: 283:     retVal = gpio_pin_write_logic(&seg_enable_4 , GPIO_HIGH);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_4 `*CS273 . `E2986 1 ]
-"290
-[; ;application.c: 290:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
+"284
+[; ;application.c: 284:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
-"291
-[; ;application.c: 291: }
+"285
+[; ;application.c: 285: }
 [e :UE 350 ]
 }
-"292
-[; ;application.c: 292: void seconds_display(void){
+"286
+[; ;application.c: 286: void seconds_display(void){
 [v _seconds_display `(v ~T0 @X0 1 ef ]
 {
 [e :U _seconds_display ]
 [f ]
-"293
-[; ;application.c: 293:     Std_ReturnType retVal = (Std_ReturnType)0x00;
+"287
+[; ;application.c: 287:     Std_ReturnType retVal = (Std_ReturnType)0x00;
 [v _retVal `uc ~T0 @X0 1 a ]
 [e = _retVal -> -> 0 `i `uc ]
-"294
-[; ;application.c: 294:     retVal = gpio_pin_write_logic(&seg_enable_4 , GPIO_LOW);
+"288
+[; ;application.c: 288:     retVal = gpio_pin_write_logic(&seg_enable_4 , GPIO_LOW);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_4 `*CS273 . `E2986 0 ]
-"295
-[; ;application.c: 295:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(seconds_input[0] - 48)));
+"289
+[; ;application.c: 289:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(seconds_input[0] - 48)));
 [e = _retVal ( _seven_segment_write_number (2 , -> &U _seven_segment `*CS276 -> - -> *U + &U _seconds_input * -> -> -> 0 `i `ui `ux -> -> # *U &U _seconds_input `ui `ux `i -> 48 `i `uc ]
-"296
-[; ;application.c: 296:     retVal = gpio_pin_write_logic(&seg_enable_5 , GPIO_HIGH);
+"290
+[; ;application.c: 290:     retVal = gpio_pin_write_logic(&seg_enable_5 , GPIO_HIGH);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_5 `*CS273 . `E2986 1 ]
-"297
-[; ;application.c: 297:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
+"291
+[; ;application.c: 291:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
-"298
-[; ;application.c: 298:     retVal = gpio_pin_write_logic(&seg_enable_5 , GPIO_LOW);
+"292
+[; ;application.c: 292:     retVal = gpio_pin_write_logic(&seg_enable_5 , GPIO_LOW);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_5 `*CS273 . `E2986 0 ]
-"299
-[; ;application.c: 299:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(seconds_input[1] - 48)));
+"293
+[; ;application.c: 293:     retVal = seven_segment_write_number(&seven_segment , ((uint8)(seconds_input[1] - 48)));
 [e = _retVal ( _seven_segment_write_number (2 , -> &U _seven_segment `*CS276 -> - -> *U + &U _seconds_input * -> -> -> 1 `i `ui `ux -> -> # *U &U _seconds_input `ui `ux `i -> 48 `i `uc ]
-"300
-[; ;application.c: 300:     retVal = gpio_pin_write_logic(&seg_enable_6 , GPIO_HIGH);
+"294
+[; ;application.c: 294:     retVal = gpio_pin_write_logic(&seg_enable_6 , GPIO_HIGH);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_6 `*CS273 . `E2986 1 ]
-"301
-[; ;application.c: 301:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
+"295
+[; ;application.c: 295:     _delay((unsigned long)((50)*(8000000UL/4000000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000000.0 `ul ]
-"302
-[; ;application.c: 302:     retVal = gpio_pin_write_logic(&seg_enable_6 , GPIO_LOW);
+"296
+[; ;application.c: 296:     retVal = gpio_pin_write_logic(&seg_enable_6 , GPIO_LOW);
 [e = _retVal ( _gpio_pin_write_logic (2 , -> &U _seg_enable_6 `*CS273 . `E2986 0 ]
-"303
-[; ;application.c: 303: }
+"297
+[; ;application.c: 297: }
 [e :UE 351 ]
 }
-"307
-[; ;application.c: 307: void get_rtc_time(void){
+"301
+[; ;application.c: 301: void get_rtc_time(void){
 [v _get_rtc_time `(v ~T0 @X0 1 ef ]
 {
 [e :U _get_rtc_time ]
 [f ]
-"308
-[; ;application.c: 308:     InitI2C();
+"302
+[; ;application.c: 302:     InitI2C();
 [e ( _InitI2C ..  ]
-"309
-[; ;application.c: 309:     ptr = time;
+"303
+[; ;application.c: 303:     ptr = time;
 [e = _ptr &U _time ]
-"310
-[; ;application.c: 310:  ptr = Get_DS1307_RTC_Time();
+"304
+[; ;application.c: 304:  ptr = Get_DS1307_RTC_Time();
 [e = _ptr ( _Get_DS1307_RTC_Time ..  ]
-"312
-[; ;application.c: 312:     clock_hours = ptr[2];
+"306
+[; ;application.c: 306:     clock_hours = ptr[2];
 [e = _clock_hours *U + _ptr * -> -> 2 `i `x -> -> # *U _ptr `i `x ]
-"313
-[; ;application.c: 313:     clock_minutes = ptr[1];
+"307
+[; ;application.c: 307:     clock_minutes = ptr[1];
 [e = _clock_minutes *U + _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
-"314
-[; ;application.c: 314:     clock_seconds = ptr[0];
+"308
+[; ;application.c: 308:     clock_seconds = ptr[0];
 [e = _clock_seconds *U + _ptr * -> -> 0 `i `x -> -> # *U _ptr `i `x ]
-"316
-[; ;application.c: 316: }
+"310
+[; ;application.c: 310: }
 [e :UE 352 ]
 }
