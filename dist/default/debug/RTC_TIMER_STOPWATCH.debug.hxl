@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\Dell\AppData\Local\Temp\xcAsot4.\driver_tmp_3.o
+ C:\Users\Dell\AppData\Local\Temp\xcAsh50.\driver_tmp_3.o
  -Odist/default/debug\RTC_TIMER_STOPWATCH.debug.hex
  -logfile=dist/default/debug\RTC_TIMER_STOPWATCH.debug.hxl
  -addressing=1
@@ -9,11 +9,11 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\Dell\AppData\Local\Temp\xcAsot4.\driver_tmp_3.o)
-  8h - 11h		(C:\Users\Dell\AppData\Local\Temp\xcAsot4.\driver_tmp_3.o)
-  1000h - 2DC8h		(C:\Users\Dell\AppData\Local\Temp\xcAsot4.\driver_tmp_3.o)
-  2DCAh - 3259h		(C:\Users\Dell\AppData\Local\Temp\xcAsot4.\driver_tmp_3.o)
-  300000h - 30000Dh		(C:\Users\Dell\AppData\Local\Temp\xcAsot4.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\Dell\AppData\Local\Temp\xcAsh50.\driver_tmp_3.o)
+  8h - 11h		(C:\Users\Dell\AppData\Local\Temp\xcAsh50.\driver_tmp_3.o)
+  1000h - 2DC8h		(C:\Users\Dell\AppData\Local\Temp\xcAsh50.\driver_tmp_3.o)
+  2DCAh - 3259h		(C:\Users\Dell\AppData\Local\Temp\xcAsh50.\driver_tmp_3.o)
+  300000h - 30000Dh		(C:\Users\Dell\AppData\Local\Temp\xcAsh50.\driver_tmp_3.o)
  Unused ranges:
   4h - 7h
   12h - FFFh
@@ -23,7 +23,7 @@
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\Dell\AppData\Local\Temp\xcAsot4.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\Dell\AppData\Local\Temp\xcAsh50.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------

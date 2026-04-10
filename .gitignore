@@ -1,0 +1,8 @@
+# Ignore preprocessed C/C++ files
+*.i
+*.ii
+
+# Ignore common build output folders
+build/
+Debug/
+Release/
