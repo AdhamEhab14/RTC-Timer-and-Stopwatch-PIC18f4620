@@ -2,7 +2,7 @@
 
 A complete embedded system project that combines a **Real-Time Clock (RTC)**, **Stopwatch**, and **Countdown Timer** using the **PIC18F4620** microcontroller. This project demonstrates modular embedded development using layered architecture and external peripheral integration.
 
----
+![Proteus Simulation Screenshot](Simulation/Project.png)
 
 ## 📌 Features
 
@@ -49,10 +49,5 @@ A complete embedded system project that combines a **Real-Time Clock (RTC)**, **
 3. Each mode has dedicated logic for input handling and display.
 4. Display is updated every second using TMR0 and software multiplexing.
 
----
-
-
-
-### 📂 File Structure
 
 
