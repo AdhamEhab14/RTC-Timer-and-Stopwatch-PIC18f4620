@@ -49,5 +49,10 @@ A complete embedded system project that combines a **Real-Time Clock (RTC)**, **
 3. Each mode has dedicated logic for input handling and display.
 4. Display is updated every second using TMR0 and software multiplexing.
 
+---
 
+## 📽 Demo Video
+
+Watch the full system in action here:  
+[Click here to watch the Project Demo on YouTube](https://www.youtube.com/watch?v=VIDEO_ID](https://youtu.be/ylY3UvTXRlI?si=nfRkT-HOdwU7zk_5))
 
